@@ -116,10 +116,6 @@
      padding: 0 20px;
  }
 
- .section-padding {
-     padding: 0px 5%;
- }
-
  .header-content {
      display: flex;
      justify-content: space-between;
@@ -181,7 +177,6 @@
      font-size: 1em;
      padding: 5px 0;
 
-
      transition: color 0.3s ease;
  }
 
@@ -225,8 +220,23 @@
 
      #main-navigation ul {
          flex-direction: column;
-
          gap: 30px;
+
+         list-style: none;
+         padding-left: 0px;
+         margin: 0px;
+
+         display: flex;
+         align-items: center;
+     }
+
+     #main-navigation ul li {
+         align-items: center;
+     }
+
+
+     header nav li {
+         margin-left: 0px;
      }
 
      .hamburger-menu {
@@ -445,9 +455,6 @@
      grid-template-columns: 1fr 1fr;
      gap: 60px;
      align-items: start;
-
-
-     padding: 0px 5%;
  }
 
  footer {
@@ -465,6 +472,7 @@
      align-items: center;
      padding: 30px 20px;
  }
+
 
 
 
@@ -525,7 +533,10 @@
  }
 
 
-
+ .about-text {
+     text-align: justify;
+     margin-top: 10px;
+ }
 
 
  .background-glow-effect {
