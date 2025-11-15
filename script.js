@@ -20,18 +20,3 @@ document.addEventListener('DOMContentLoaded', function() {
     
      
 });
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const videos = document.querySelectorAll('video[data-poster-srcset]');
-    
-    videos.forEach(video => {
-        const srcset = video.getAttribute('data-poster-srcset');
-        
-        if (srcset) {
-            const tempImage = new Image();
-            tempImage.srcset = srcset;
-            video.poster = tempImage.currentSrc || video.poster;
-        }
-    });
-});
